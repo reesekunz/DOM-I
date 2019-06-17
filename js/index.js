@@ -51,14 +51,40 @@ let middleImage = document.querySelector('#middle-img');
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]) 
 
 let navBar = document.querySelector('nav');
+navBar.style.color = "green";
 
 let anchorTags = document.querySelectorAll('a');
 anchorTags[0].textContent = 'Services';
 anchorTags[1].textContent = 'Product';
-anchorTags[2].textContent = 'Vistion';
+anchorTags[2].textContent = 'Vision';
 anchorTags[3].textContent = 'Features';
 anchorTags[4].textContent = 'About';
 anchorTags[5].textContent = 'Contact';
+
+anchorTags[0].style.color = 'green';
+anchorTags[1].style.color = 'green';
+anchorTags[2].style.color = 'green';
+anchorTags[3].style.color = 'green';
+anchorTags[4].style.color = 'green';
+anchorTags[5].style.color = 'green';
+
+
+let newTagsFirst = document.createElement('a');
+newTagsFirst.textContent = 'First Item';
+newTagsFirst.style.color = 'green';
+
+navBar.prepend(newTagsFirst);
+
+//console.log(anchorTags[0].textContent)
+
+let newTagsLast = document.createElement('a');
+newTagsLast.textContent = 'Last Item';
+newTagsLast.style.color = 'green';
+
+navBar.appendChild(newTagsLast);
+
+
+//console.log(anchorTags[0].textContent)
 
 let callToAction = document.querySelector('.cta');
 
@@ -95,3 +121,4 @@ h4Headers[2].textContent = "Services";
 h4Headers[3].textContent = "Product";
 h4Headers[4].textContent = "Vision";
 h4Headers[5].textContent = "Contact";
+
