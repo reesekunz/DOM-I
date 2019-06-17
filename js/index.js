@@ -42,20 +42,20 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navBar = document.getElementsByTagName('nav');
-//console.log('nav',nav)
+navBar = document.querySelector('nav');
 
-cont anchorTags = document.querySelector('a');
-//console.log('a', anchorTags)
+anchorTags = document.querySelectorAll('a');
 
-const cta = document.querySelector('.cta');
+callToAction = document.querySelector('.cta');
 
-const mainContent = document.querySelector('.main-content');
+header = document.querySelector('h1');
 
-const contact = document.querySelector('.contact');
+button = document.querySelector('button');
 
-const footer = document.getElementsByTagName('footer');
+mainContent = document.querySelector('.main-content');
 
+contact = document.querySelector('.contact');
 
+footer = document.querySelector('footer');
 
 
