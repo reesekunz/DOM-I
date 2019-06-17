@@ -39,8 +39,15 @@ const siteContent = {
 
 
 // Example: Update the img src for the logo
-//let logo = document.getElementById("logo-img");
-//logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImage = document.querySelector('#cta-img');
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]) 
+
+let middleImage = document.querySelector('#middle-img');
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]) 
 
 let navBar = document.querySelector('nav');
 
@@ -57,15 +64,3 @@ let mainContent = document.querySelector('.main-content');
 let contact = document.querySelector('.contact');
 
 let footer = document.querySelector('footer');
-
-let logoImage = document.querySelector('#logo-img');
-logoImage.src = "https://ih0.redbubble.net/image.415472574.2975/aps,650x642,small,transparent-pad,750x1000,f8f8f8.jpg"
-logoImage.alt = "A wild Doodle Bob."
-
-let ctaImage = document.querySelector('#cta-img');
-ctaImage.src = "https://assets.marthastewart.com/styles/wmax-520-highdpi/d37/deluxe-turkey-sandwich-1106-med102471/deluxe-turkey-sandwich-1106-med102471_sq.jpg?itok=_GGakr7D"
-ctaImage.alt = "That's a nice turkey sandwich"
-
-let middleImage = document.querySelector('#middle-img');
-middleImage.src = "https://pbs.twimg.com/media/DtWYSkHWsAAKyNZ.jpg"
-middleImage.alt = "Lambda School swag"
