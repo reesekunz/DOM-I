@@ -51,15 +51,14 @@ let middleImage = document.querySelector('#middle-img');
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]) 
 
 let navBar = document.querySelector('nav');
-navBar.style.color = "green";
 
 let anchorTags = document.querySelectorAll('a');
-anchorTags[0].textContent = 'Services';
-anchorTags[1].textContent = 'Product';
-anchorTags[2].textContent = 'Vision';
-anchorTags[3].textContent = 'Features';
-anchorTags[4].textContent = 'About';
-anchorTags[5].textContent = 'Contact';
+anchorTags[0].textContent = siteContent ["nav"]["nav-item-1"];
+anchorTags[1].textContent = siteContent ["nav"]["nav-item-2"];
+anchorTags[2].textContent = siteContent ["nav"]["nav-item-3"];
+anchorTags[3].textContent = siteContent ["nav"]["nav-item-4"];
+anchorTags[4].textContent = siteContent ["nav"]["nav-item-5"];
+anchorTags[5].textContent = siteContent ["nav"]["nav-item-6"];
 
 anchorTags[0].style.color = 'green';
 anchorTags[1].style.color = 'green';
@@ -69,13 +68,15 @@ anchorTags[4].style.color = 'green';
 anchorTags[5].style.color = 'green';
 
 
+// Prepend Nav Item
+
 let newTagsFirst = document.createElement('a');
 newTagsFirst.textContent = 'First Item';
 newTagsFirst.style.color = 'green';
 
 navBar.prepend(newTagsFirst);
 
-//console.log(anchorTags[0].textContent)
+//Append Nav Item 
 
 let newTagsLast = document.createElement('a');
 newTagsLast.textContent = 'Last Item';
@@ -84,41 +85,28 @@ newTagsLast.style.color = 'green';
 navBar.appendChild(newTagsLast);
 
 
-//console.log(anchorTags[0].textContent)
-
-let callToAction = document.querySelector('.cta');
-
 let header = document.querySelector('h1');
-header.textContent = "DOM Is Awesome!";
-
+header.textContent = siteContent ["cta"]["h1"];
 
 let button = document.querySelector('button');
-button.textContent = "Get Started";
-
-let mainContent = document.querySelector('.main-content');
-
-let contact = document.querySelector('.contact');
-
-
-let footer = document.querySelector('footer');
-footer.textContent = "Copyright Great Idea! 2018";
-
+button.textContent = siteContent ["cta"]["button"];
 
 let paragraphs = document.querySelectorAll('p');
-paragraphs[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-paragraphs[5].textContent = "123 Way 456 Street Somewhere, USA";
-paragraphs[6].textContent = "1 (888) 888-8888";
-paragraphs[7].textContent = "sales@greatidea.io";
+paragraphs[0].textContent = siteContent ["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent ["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent ["main-content"]["services-content"];
+paragraphs[3].textContent = siteContent ["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent ["main-content"]["vision-content"];
+paragraphs[5].textContent = siteContent ["contact"]["address"];
+paragraphs[6].textContent = siteContent ["contact"]["phone"];
+paragraphs[7].textContent = siteContent ["contact"]["email"];
+paragraphs[8].textContent = siteContent ["footer"]["copyright"];
 
 let h4Headers = document.querySelectorAll('h4');
-h4Headers[0].textContent = "Features";
-h4Headers[1].textContent = "About";
-h4Headers[2].textContent = "Services";
-h4Headers[3].textContent = "Product";
-h4Headers[4].textContent = "Vision";
-h4Headers[5].textContent = "Contact";
+h4Headers[0].textContent = siteContent ["main-content"]["features-h4"];
+h4Headers[1].textContent = siteContent ["main-content"]["about-h4"];
+h4Headers[2].textContent = siteContent ["main-content"]["services-h4"];
+h4Headers[3].textContent = siteContent ["main-content"]["product-h4"];
+h4Headers[4].textContent = siteContent ["main-content"]["vision-h4"];
+h4Headers[5].textContent = siteContent ["contact"]["contact-h4"];
 
